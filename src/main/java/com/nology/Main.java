@@ -3,6 +3,7 @@ package com.nology;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,10 +15,9 @@ import java.util.Map;
 public class Main {
 
   public static void main(String[] args) throws IOException {
-    String csvFile =
-        "C:\\Users\\lae32\\Desktop\\sandbox\\java-library-project" + "\\books_data.csv";
+    String csvFile = "C:\\Users\\lae32\\Desktop\\sandbox\\java-library-project\\books_data.csv";
 
-    try (InputStream in = new FileInputStream(csvFile); ) {
+    try (InputStream in = new FileInputStream(csvFile)) {
       CSV csv = new CSV(true, ',', in);
       List<String> fieldNames = null;
       if (csv.hasNext()) fieldNames = new ArrayList<>(csv.next());
@@ -32,7 +32,15 @@ public class Main {
       }
       ObjectMapper mapper = new ObjectMapper();
       mapper.enable(SerializationFeature.INDENT_OUTPUT);
-      mapper.writeValue(System.out, list);
+      mapper.writeValue(new File("src/books_data.json"), list);
     }
   }
+  /*
+  TODO:
+    Parse JSON into individual Java objects
+    Store these objects in an ArrayList
+    Create login screen using scanner - admin, existing user, new user
+    Allow admins to create reports
+    Allow users to loan and return books
+  */
 }
