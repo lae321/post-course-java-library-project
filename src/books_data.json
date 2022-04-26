@@ -1,962 +1,841 @@
-[
-  {
-    "Number": "1",
-    "Title": "Fundamentals of Wavelets",
-    "Author": "Goswami, Jaideva",
-    "Genre": "tech",
-    "SubGenre": "signal_processing",
-    "Publisher": "Wiley"
-  },
-  {
-    "Number": "2",
-    "Title": "Data Smart",
-    "Author": "Foreman, John",
-    "Genre": "tech",
-    "SubGenre": "data_science",
-    "Publisher": "Wiley"
-  },
-  {
-    "Number": "3",
-    "Title": "God Created the Integers",
-    "Author": "Hawking, Stephen",
-    "Genre": "tech",
-    "SubGenre": "mathematics",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "4",
-    "Title": "Superfreakonomics",
-    "Author": "Dubner, Stephen",
-    "Genre": "science",
-    "SubGenre": "economics",
-    "Publisher": "HarperCollins"
-  },
-  {
-    "Number": "5",
-    "Title": "Orientalism",
-    "Author": "Said, Edward",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "6",
-    "Title": "Nature of Statistical Learning Theory, The",
-    "Author": "Vapnik, Vladimir",
-    "Genre": "tech",
-    "SubGenre": "data_science",
-    "Publisher": "Springer"
-  },
-  {
-    "Number": "7",
-    "Title": "Integration of the Indian States",
-    "Author": "Menon, V P",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Orient Blackswan"
-  },
-  {
-    "Number": "8",
-    "Title": "Drunkard's Walk, The",
-    "Author": "Mlodinow, Leonard",
-    "Genre": "science",
-    "SubGenre": "mathematics",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "9",
-    "Title": "Image Processing & Mathematical Morphology",
-    "Author": "Shih, Frank",
-    "Genre": "tech",
-    "SubGenre": "signal_processing",
-    "Publisher": "CRC"
-  },
-  {
-    "Number": "10",
-    "Title": "How to Think Like Sherlock Holmes",
-    "Author": "Konnikova, Maria",
-    "Genre": "nonfiction",
-    "SubGenre": "psychology",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "11",
-    "Title": "Data Scientists at Work",
-    "Author": "Sebastian Gutierrez",
-    "Genre": "tech",
-    "SubGenre": "data_science",
-    "Publisher": "Apress"
-  },
-  {
-    "Number": "12",
-    "Title": "Slaughterhouse Five",
-    "Author": "Vonnegut, Kurt",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "13",
-    "Title": "Birth of a Theorem",
-    "Author": "Villani, Cedric",
-    "Genre": "science",
-    "SubGenre": "mathematics",
-    "Publisher": "Bodley Head"
-  },
-  {
-    "Number": "14",
-    "Title": "Structure & Interpretation of Computer Programs",
-    "Author": "Sussman, Gerald",
-    "Genre": "tech",
-    "SubGenre": "computer_science",
-    "Publisher": "MIT Press"
-  },
-  {
-    "Number": "15",
-    "Title": "Age of Wrath, The",
-    "Author": "Eraly, Abraham",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "16",
-    "Title": "Trial, The",
-    "Author": "Kafka, Frank",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "17",
-    "Title": "Statistical Decision Theory'",
-    "Author": "Pratt, John",
-    "Genre": "tech",
-    "SubGenre": "data_science",
-    "Publisher": "MIT Press"
-  },
-  {
-    "Number": "18",
-    "Title": "Data Mining Handbook",
-    "Author": "Nisbet, Robert",
-    "Genre": "tech",
-    "SubGenre": "data_science",
-    "Publisher": "Apress"
-  },
-  {
-    "Number": "19",
-    "Title": "New Machiavelli, The",
-    "Author": "Wells, H. G.",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "20",
-    "Title": "Physics & Philosophy",
-    "Author": "Heisenberg, Werner",
-    "Genre": "philosophy",
-    "SubGenre": "science",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "21",
-    "Title": "Making Software",
-    "Author": "Oram, Andy",
-    "Genre": "tech",
-    "SubGenre": "computer_science",
-    "Publisher": "O'Reilly"
-  },
-  {
-    "Number": "22",
-    "Title": "Analysis, Vol I",
-    "Author": "Tao, Terence",
-    "Genre": "tech",
-    "SubGenre": "mathematics",
-    "Publisher": "HBA"
-  },
-  {
-    "Number": "23",
-    "Title": "Machine Learning for Hackers",
-    "Author": "Conway, Drew",
-    "Genre": "tech",
-    "SubGenre": "data_science",
-    "Publisher": "O'Reilly"
-  },
-  {
-    "Number": "24",
-    "Title": "Signal and the Noise, The",
-    "Author": "Silver, Nate",
-    "Genre": "tech",
-    "SubGenre": "data_science",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "25",
-    "Title": "Python for Data Analysis",
-    "Author": "McKinney, Wes",
-    "Genre": "tech",
-    "SubGenre": "data_science",
-    "Publisher": "O'Reilly"
-  },
-  {
-    "Number": "26",
-    "Title": "Introduction to Algorithms",
-    "Author": "Cormen, Thomas",
-    "Genre": "tech",
-    "SubGenre": "computer_science",
-    "Publisher": "MIT Press"
-  },
-  {
-    "Number": "27",
-    "Title": "Beautiful and the Damned, The",
-    "Author": "Deb, Siddhartha",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "28",
-    "Title": "Outsider, The",
-    "Author": "Camus, Albert",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "29",
-    "Title": "Complete Sherlock Holmes, The - Vol I",
-    "Author": "Doyle, Arthur Conan",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "30",
-    "Title": "Complete Sherlock Holmes, The - Vol II",
-    "Author": "Doyle, Arthur Conan",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "31",
-    "Title": "Wealth of Nations, The",
-    "Author": "Smith, Adam",
-    "Genre": "science",
-    "SubGenre": "economics",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "32",
-    "Title": "Pillars of the Earth, The",
-    "Author": "Follett, Ken",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "33",
-    "Title": "Mein Kampf",
-    "Author": "Hitler, Adolf",
-    "Genre": "nonfiction",
-    "SubGenre": "autobiography",
-    "Publisher": "Rupa"
-  },
-  {
-    "Number": "34",
-    "Title": "Tao of Physics, The",
-    "Author": "Capra, Fritjof",
-    "Genre": "science",
-    "SubGenre": "physics",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "35",
-    "Title": "Surely You're Joking Mr Feynman",
-    "Author": "Feynman, Richard",
-    "Genre": "science",
-    "SubGenre": "physics",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "36",
-    "Title": "Farewell to Arms, A",
-    "Author": "Hemingway, Ernest",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Rupa"
-  },
-  {
-    "Number": "37",
-    "Title": "Veteran, The",
-    "Author": "Forsyth, Frederick",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Transworld"
-  },
-  {
-    "Number": "38",
-    "Title": "False Impressions",
-    "Author": "Archer, Jeffery",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Pan"
-  },
-  {
-    "Number": "39",
-    "Title": "Last Lecture, The",
-    "Author": "Pausch, Randy",
-    "Genre": "nonfiction",
-    "SubGenre": "autobiography",
-    "Publisher": "Hyperion"
-  },
-  {
-    "Number": "40",
-    "Title": "Return of the Primitive",
-    "Author": "Rand, Ayn",
-    "Genre": "philosophy",
-    "SubGenre": "objectivism",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "41",
-    "Title": "Jurassic Park",
-    "Author": "Crichton, Michael",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "42",
-    "Title": "Russian Journal, A",
-    "Author": "Steinbeck, John",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "43",
-    "Title": "Tales of Mystery and Imagination",
-    "Author": "Poe, Edgar Allen",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "HarperCollins"
-  },
-  {
-    "Number": "44",
-    "Title": "Freakonomics",
-    "Author": "Dubner, Stephen",
-    "Genre": "science",
-    "SubGenre": "economics",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "45",
-    "Title": "Hidden Connections, The",
-    "Author": "Capra, Fritjof",
-    "Genre": "science",
-    "SubGenre": "physics",
-    "Publisher": "HarperCollins"
-  },
-  {
-    "Number": "46",
-    "Title": "Story of Philosophy, The",
-    "Author": "Durant, Will",
-    "Genre": "philosophy",
-    "SubGenre": "history",
-    "Publisher": "Pocket"
-  },
-  {
-    "Number": "47",
-    "Title": "Asami Asami",
-    "Author": "Deshpande, P L",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Mauj"
-  },
-  {
-    "Number": "48",
-    "Title": "Journal of a Novel",
-    "Author": "Steinbeck, John",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "49",
-    "Title": "Once There Was a War",
-    "Author": "Steinbeck, John",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "50",
-    "Title": "Moon is Down, The",
-    "Author": "Steinbeck, John",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "51",
-    "Title": "Brethren, The",
-    "Author": "Grisham, John",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "52",
-    "Title": "In a Free State",
-    "Author": "Naipaul, V. S.",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Rupa"
-  },
-  {
-    "Number": "53",
-    "Title": "Catch 22",
-    "Author": "Heller, Joseph",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "54",
-    "Title": "Complete Mastermind, The",
-    "Author": "BBC",
-    "Genre": "nonfiction",
-    "SubGenre": "trivia",
-    "Publisher": "BBC"
-  },
-  {
-    "Number": "55",
-    "Title": "Dylan on Dylan",
-    "Author": "Dylan, Bob",
-    "Genre": "nonfiction",
-    "SubGenre": "autobiography",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "56",
-    "Title": "Soft Computing & Intelligent Systems",
-    "Author": "Gupta, Madan",
-    "Genre": "tech",
-    "SubGenre": "data_science",
-    "Publisher": "Elsevier"
-  },
-  {
-    "Number": "57",
-    "Title": "Textbook of Economic Theory",
-    "Author": "Stonier, Alfred",
-    "Genre": "tech",
-    "SubGenre": "economics",
-    "Publisher": "Pearson"
-  },
-  {
-    "Number": "58",
-    "Title": "Econometric Analysis",
-    "Author": "Greene, W. H.",
-    "Genre": "tech",
-    "SubGenre": "economics",
-    "Publisher": "Pearson"
-  },
-  {
-    "Number": "59",
-    "Title": "Learning OpenCV",
-    "Author": "Bradsky, Gary",
-    "Genre": "tech",
-    "SubGenre": "signal_processing",
-    "Publisher": "O'Reilly"
-  },
-  {
-    "Number": "60",
-    "Title": "Data Structures Using C & C++",
-    "Author": "Tanenbaum, Andrew",
-    "Genre": "tech",
-    "SubGenre": "computer_science",
-    "Publisher": "Prentice Hall"
-  },
-  {
-    "Number": "61",
-    "Title": "Computer Vision, A Modern Approach",
-    "Author": "Forsyth, David",
-    "Genre": "tech",
-    "SubGenre": "signal_processing",
-    "Publisher": "Pearson"
-  },
-  {
-    "Number": "62",
-    "Title": "Principles of Communication Systems",
-    "Author": "Taub, Schilling",
-    "Genre": "tech",
-    "SubGenre": "signal_processing",
-    "Publisher": "TMH"
-  },
-  {
-    "Number": "63",
-    "Title": "Let Us C",
-    "Author": "Kanetkar, Yashwant",
-    "Genre": "tech",
-    "SubGenre": "computer_science",
-    "Publisher": "Prentice Hall"
-  },
-  {
-    "Number": "64",
-    "Title": "Amulet of Samarkand, The",
-    "Author": "Stroud, Jonathan",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "65",
-    "Title": "Crime and Punishment",
-    "Author": "Dostoevsky, Fyodor",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "66",
-    "Title": "Angels & Demons",
-    "Author": "Brown, Dan",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "67",
-    "Title": "Argumentative Indian, The",
-    "Author": "Sen, Amartya",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Picador"
-  },
-  {
-    "Number": "68",
-    "Title": "Sea of Poppies",
-    "Author": "Ghosh, Amitav",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "69",
-    "Title": "Idea of Justice, The",
-    "Author": "Sen, Amartya",
-    "Genre": "philosophy",
-    "SubGenre": "economics",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "70",
-    "Title": "Raisin in the Sun, A",
-    "Author": "Hansberry, Lorraine",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "71",
-    "Title": "All the President's Men",
-    "Author": "Woodward, Bob",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "72",
-    "Title": "Prisoner of Birth, A",
-    "Author": "Archer, Jeffery",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Pan"
-  },
-  {
-    "Number": "73",
-    "Title": "Scoop!",
-    "Author": "Nayar, Kuldip",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "HarperCollins"
-  },
-  {
-    "Number": "74",
-    "Title": "Ahe Manohar Tari",
-    "Author": "Deshpande, Sunita",
-    "Genre": "nonfiction",
-    "SubGenre": "autobiography",
-    "Publisher": "Mauj"
-  },
-  {
-    "Number": "75",
-    "Title": "Last Mughal, The",
-    "Author": "Dalrymple, William",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "76",
-    "Title": "Social Choice & Welfare, Vol 39 No. 1",
-    "Author": "Various",
-    "Genre": "tech",
-    "SubGenre": "economics",
-    "Publisher": "Springer"
-  },
-  {
-    "Number": "77",
-    "Title": "Radiowaril Bhashane & Shrutika",
-    "Author": "Deshpande, P L",
-    "Genre": "nonfiction",
-    "SubGenre": "misc",
-    "Publisher": "Mauj"
-  },
-  {
-    "Number": "78",
-    "Title": "Gun Gayin Awadi",
-    "Author": "Deshpande, P L",
-    "Genre": "nonfiction",
-    "SubGenre": "misc",
-    "Publisher": "Mauj"
-  },
-  {
-    "Number": "79",
-    "Title": "Aghal Paghal",
-    "Author": "Deshpande, P L",
-    "Genre": "nonfiction",
-    "SubGenre": "misc",
-    "Publisher": "Mauj"
-  },
-  {
-    "Number": "80",
-    "Title": "Maqta-e-Ghalib",
-    "Author": "Garg, Sanjay",
-    "Genre": "nonfiction",
-    "SubGenre": "poetry",
-    "Publisher": "Mauj"
-  },
-  {
-    "Number": "81",
-    "Title": "Beyond Degrees",
-    "Author": "",
-    "Genre": "philosophy",
-    "SubGenre": "education",
-    "Publisher": "HarperCollins"
-  },
-  {
-    "Number": "82",
-    "Title": "Manasa",
-    "Author": "Kale, V P",
-    "Genre": "nonfiction",
-    "SubGenre": "misc",
-    "Publisher": "Mauj"
-  },
-  {
-    "Number": "83",
-    "Title": "India from Midnight to Milennium",
-    "Author": "Tharoor, Shashi",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "84",
-    "Title": "World's Greatest Trials, The",
-    "Author": "John Doe",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "85",
-    "Title": "Great Indian Novel, The",
-    "Author": "Tharoor, Shashi",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "86",
-    "Title": "O Jerusalem!",
-    "Author": "Lapierre, Dominique",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "vikas"
-  },
-  {
-    "Number": "87",
-    "Title": "City of Joy, The",
-    "Author": "Lapierre, Dominique",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "vikas"
-  },
-  {
-    "Number": "88",
-    "Title": "Freedom at Midnight",
-    "Author": "Lapierre, Dominique",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "vikas"
-  },
-  {
-    "Number": "89",
-    "Title": "Winter of Our Discontent, The",
-    "Author": "Steinbeck, John",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "90",
-    "Title": "On Education",
-    "Author": "Russell, Bertrand",
-    "Genre": "philosophy",
-    "SubGenre": "education",
-    "Publisher": "Routledge"
-  },
-  {
-    "Number": "91",
-    "Title": "Free Will",
-    "Author": "Harris, Sam",
-    "Genre": "nonfiction",
-    "SubGenre": "psychology",
-    "Publisher": "FreePress"
-  },
-  {
-    "Number": "92",
-    "Title": "Bookless in Baghdad",
-    "Author": "Tharoor, Shashi",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "93",
-    "Title": "Case of the Lame Canary, The",
-    "Author": "Gardner, Earle Stanley",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "94",
-    "Title": "Theory of Everything, The",
-    "Author": "Hawking, Stephen",
-    "Genre": "science",
-    "SubGenre": "physics",
-    "Publisher": "Jaico"
-  },
-  {
-    "Number": "95",
-    "Title": "New Markets & Other Essays",
-    "Author": "Drucker, Peter",
-    "Genre": "science",
-    "SubGenre": "economics",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "96",
-    "Title": "Electric Universe",
-    "Author": "Bodanis, David",
-    "Genre": "science",
-    "SubGenre": "physics",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "97",
-    "Title": "Hunchback of Notre Dame, The",
-    "Author": "Hugo, Victor",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "98",
-    "Title": "Burning Bright",
-    "Author": "Steinbeck, John",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "99",
-    "Title": "Age of Discontuinity, The",
-    "Author": "Drucker, Peter",
-    "Genre": "nonfiction",
-    "SubGenre": "economics",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "100",
-    "Title": "Doctor in the Nude",
-    "Author": "Gordon, Richard",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "101",
-    "Title": "Down and Out in Paris & London",
-    "Author": "Orwell, George",
-    "Genre": "nonfiction",
-    "SubGenre": "autobiography",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "102",
-    "Title": "Identity & Violence",
-    "Author": "Sen, Amartya",
-    "Genre": "philosophy",
-    "SubGenre": "philosophy",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "103",
-    "Title": "Beyond the Three Seas",
-    "Author": "Dalrymple, William",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Random House"
-  },
-  {
-    "Number": "104",
-    "Title": "World's Greatest Short Stories, The",
-    "Author": "",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Jaico"
-  },
-  {
-    "Number": "105",
-    "Title": "Talking Straight",
-    "Author": "Iacoca, Lee",
-    "Genre": "nonfiction",
-    "SubGenre": "autobiography",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "106",
-    "Title": "Maugham's Collected Short Stories, Vol 3",
-    "Author": "Maugham, William S",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Vintage"
-  },
-  {
-    "Number": "107",
-    "Title": "Phantom of Manhattan, The",
-    "Author": "Forsyth, Frederick",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "108",
-    "Title": "Ashenden of The British Agent",
-    "Author": "Maugham, William S",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Vintage"
-  },
-  {
-    "Number": "109",
-    "Title": "Zen & The Art of Motorcycle Maintenance",
-    "Author": "Pirsig, Robert",
-    "Genre": "philosophy",
-    "SubGenre": "autobiography",
-    "Publisher": "Vintage"
-  },
-  {
-    "Number": "110",
-    "Title": "Great War for Civilization, The",
-    "Author": "Fisk, Robert",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "HarperCollins"
-  },
-  {
-    "Number": "111",
-    "Title": "We the Living",
-    "Author": "Rand, Ayn",
-    "Genre": "fiction",
-    "SubGenre": "novel",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "112",
-    "Title": "Artist and the Mathematician, The",
-    "Author": "Aczel, Amir",
-    "Genre": "science",
-    "SubGenre": "mathematics",
-    "Publisher": "HighStakes"
-  },
-  {
-    "Number": "113",
-    "Title": "History of Western Philosophy",
-    "Author": "Russell, Bertrand",
-    "Genre": "philosophy",
-    "SubGenre": "philosophy",
-    "Publisher": "Routledge"
-  },
-  {
-    "Number": "114",
-    "Title": "Selected Short Stories",
-    "Author": "",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Jaico"
-  },
-  {
-    "Number": "115",
-    "Title": "Rationality & Freedom",
-    "Author": "Sen, Amartya",
-    "Genre": "science",
-    "SubGenre": "economics",
-    "Publisher": "Springer"
-  },
-  {
-    "Number": "116",
-    "Title": "Clash of Civilizations and Remaking of the World Order",
-    "Author": "Huntington, Samuel",
-    "Genre": "nonfiction",
-    "SubGenre": "history",
-    "Publisher": "Simon&Schuster"
-  },
-  {
-    "Number": "117",
-    "Title": "Uncommon Wisdom",
-    "Author": "Capra, Fritjof",
-    "Genre": "nonfiction",
-    "SubGenre": "anthology",
-    "Publisher": "Fontana"
-  },
-  {
-    "Number": "118",
-    "Title": "One",
-    "Author": "Bach, Richard",
-    "Genre": "nonfiction",
-    "SubGenre": "autobiography",
-    "Publisher": "Dell"
-  },
-  {
-    "Number": "119",
-    "Title": "Karl Marx Biography",
-    "Author": "Marx, Karl",
-    "Genre": "nonfiction",
-    "SubGenre": "autobiography",
-    "Publisher": "Penguin"
-  },
-  {
-    "Number": "120",
-    "Title": "To Sir With Love",
-    "Author": "Braithwaite",
-    "Genre": "fiction",
-    "SubGenre": "classic",
-    "Publisher": "Penguin"
-  }
-]
+[ {
+  "number" : "1",
+  "title" : "Fundamentals of Wavelets",
+  "author" : "Goswami, Jaideva",
+  "genre" : "tech",
+  "subGenre" : "signal_processing",
+  "publisher" : "Wiley"
+}, {
+  "number" : "2",
+  "title" : "Data Smart",
+  "author" : "Foreman, John",
+  "genre" : "tech",
+  "subGenre" : "data_science",
+  "publisher" : "Wiley"
+}, {
+  "number" : "3",
+  "title" : "God Created the Integers",
+  "author" : "Hawking, Stephen",
+  "genre" : "tech",
+  "subGenre" : "mathematics",
+  "publisher" : "Penguin"
+}, {
+  "number" : "4",
+  "title" : "Superfreakonomics",
+  "author" : "Dubner, Stephen",
+  "genre" : "science",
+  "subGenre" : "economics",
+  "publisher" : "HarperCollins"
+}, {
+  "number" : "5",
+  "title" : "Orientalism",
+  "author" : "Said, Edward",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Penguin"
+}, {
+  "number" : "6",
+  "title" : "Nature of Statistical Learning Theory, The",
+  "author" : "Vapnik, Vladimir",
+  "genre" : "tech",
+  "subGenre" : "data_science",
+  "publisher" : "Springer"
+}, {
+  "number" : "7",
+  "title" : "Integration of the Indian States",
+  "author" : "Menon, V P",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Orient Blackswan"
+}, {
+  "number" : "8",
+  "title" : "Drunkard's Walk, The",
+  "author" : "Mlodinow, Leonard",
+  "genre" : "science",
+  "subGenre" : "mathematics",
+  "publisher" : "Penguin"
+}, {
+  "number" : "9",
+  "title" : "Image Processing & Mathematical Morphology",
+  "author" : "Shih, Frank",
+  "genre" : "tech",
+  "subGenre" : "signal_processing",
+  "publisher" : "CRC"
+}, {
+  "number" : "10",
+  "title" : "How to Think Like Sherlock Holmes",
+  "author" : "Konnikova, Maria",
+  "genre" : "nonfiction",
+  "subGenre" : "psychology",
+  "publisher" : "Penguin"
+}, {
+  "number" : "11",
+  "title" : "Data Scientists at Work",
+  "author" : "Sebastian Gutierrez",
+  "genre" : "tech",
+  "subGenre" : "data_science",
+  "publisher" : "Apress"
+}, {
+  "number" : "12",
+  "title" : "Slaughterhouse Five",
+  "author" : "Vonnegut, Kurt",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Random House"
+}, {
+  "number" : "13",
+  "title" : "Birth of a Theorem",
+  "author" : "Villani, Cedric",
+  "genre" : "science",
+  "subGenre" : "mathematics",
+  "publisher" : "Bodley Head"
+}, {
+  "number" : "14",
+  "title" : "Structure & Interpretation of Computer Programs",
+  "author" : "Sussman, Gerald",
+  "genre" : "tech",
+  "subGenre" : "computer_science",
+  "publisher" : "MIT Press"
+}, {
+  "number" : "15",
+  "title" : "Age of Wrath, The",
+  "author" : "Eraly, Abraham",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Penguin"
+}, {
+  "number" : "16",
+  "title" : "Trial, The",
+  "author" : "Kafka, Frank",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Random House"
+}, {
+  "number" : "17",
+  "title" : "Statistical Decision Theory'",
+  "author" : "Pratt, John",
+  "genre" : "tech",
+  "subGenre" : "data_science",
+  "publisher" : "MIT Press"
+}, {
+  "number" : "18",
+  "title" : "Data Mining Handbook",
+  "author" : "Nisbet, Robert",
+  "genre" : "tech",
+  "subGenre" : "data_science",
+  "publisher" : "Apress"
+}, {
+  "number" : "19",
+  "title" : "New Machiavelli, The",
+  "author" : "Wells, H. G.",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Penguin"
+}, {
+  "number" : "20",
+  "title" : "Physics & Philosophy",
+  "author" : "Heisenberg, Werner",
+  "genre" : "philosophy",
+  "subGenre" : "science",
+  "publisher" : "Penguin"
+}, {
+  "number" : "21",
+  "title" : "Making Software",
+  "author" : "Oram, Andy",
+  "genre" : "tech",
+  "subGenre" : "computer_science",
+  "publisher" : "O'Reilly"
+}, {
+  "number" : "22",
+  "title" : "Analysis, Vol I",
+  "author" : "Tao, Terence",
+  "genre" : "tech",
+  "subGenre" : "mathematics",
+  "publisher" : "HBA"
+}, {
+  "number" : "23",
+  "title" : "Machine Learning for Hackers",
+  "author" : "Conway, Drew",
+  "genre" : "tech",
+  "subGenre" : "data_science",
+  "publisher" : "O'Reilly"
+}, {
+  "number" : "24",
+  "title" : "Signal and the Noise, The",
+  "author" : "Silver, Nate",
+  "genre" : "tech",
+  "subGenre" : "data_science",
+  "publisher" : "Penguin"
+}, {
+  "number" : "25",
+  "title" : "Python for Data Analysis",
+  "author" : "McKinney, Wes",
+  "genre" : "tech",
+  "subGenre" : "data_science",
+  "publisher" : "O'Reilly"
+}, {
+  "number" : "26",
+  "title" : "Introduction to Algorithms",
+  "author" : "Cormen, Thomas",
+  "genre" : "tech",
+  "subGenre" : "computer_science",
+  "publisher" : "MIT Press"
+}, {
+  "number" : "27",
+  "title" : "Beautiful and the Damned, The",
+  "author" : "Deb, Siddhartha",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Penguin"
+}, {
+  "number" : "28",
+  "title" : "Outsider, The",
+  "author" : "Camus, Albert",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Penguin"
+}, {
+  "number" : "29",
+  "title" : "Complete Sherlock Holmes, The - Vol I",
+  "author" : "Doyle, Arthur Conan",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Random House"
+}, {
+  "number" : "30",
+  "title" : "Complete Sherlock Holmes, The - Vol II",
+  "author" : "Doyle, Arthur Conan",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Random House"
+}, {
+  "number" : "31",
+  "title" : "Wealth of Nations, The",
+  "author" : "Smith, Adam",
+  "genre" : "science",
+  "subGenre" : "economics",
+  "publisher" : "Random House"
+}, {
+  "number" : "32",
+  "title" : "Pillars of the Earth, The",
+  "author" : "Follett, Ken",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Random House"
+}, {
+  "number" : "33",
+  "title" : "Mein Kampf",
+  "author" : "Hitler, Adolf",
+  "genre" : "nonfiction",
+  "subGenre" : "autobiography",
+  "publisher" : "Rupa"
+}, {
+  "number" : "34",
+  "title" : "Tao of Physics, The",
+  "author" : "Capra, Fritjof",
+  "genre" : "science",
+  "subGenre" : "physics",
+  "publisher" : "Penguin"
+}, {
+  "number" : "35",
+  "title" : "Surely You're Joking Mr Feynman",
+  "author" : "Feynman, Richard",
+  "genre" : "science",
+  "subGenre" : "physics",
+  "publisher" : "Random House"
+}, {
+  "number" : "36",
+  "title" : "Farewell to Arms, A",
+  "author" : "Hemingway, Ernest",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Rupa"
+}, {
+  "number" : "37",
+  "title" : "Veteran, The",
+  "author" : "Forsyth, Frederick",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Transworld"
+}, {
+  "number" : "38",
+  "title" : "False Impressions",
+  "author" : "Archer, Jeffery",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Pan"
+}, {
+  "number" : "39",
+  "title" : "Last Lecture, The",
+  "author" : "Pausch, Randy",
+  "genre" : "nonfiction",
+  "subGenre" : "autobiography",
+  "publisher" : "Hyperion"
+}, {
+  "number" : "40",
+  "title" : "Return of the Primitive",
+  "author" : "Rand, Ayn",
+  "genre" : "philosophy",
+  "subGenre" : "objectivism",
+  "publisher" : "Penguin"
+}, {
+  "number" : "41",
+  "title" : "Jurassic Park",
+  "author" : "Crichton, Michael",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Random House"
+}, {
+  "number" : "42",
+  "title" : "Russian Journal, A",
+  "author" : "Steinbeck, John",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Penguin"
+}, {
+  "number" : "43",
+  "title" : "Tales of Mystery and Imagination",
+  "author" : "Poe, Edgar Allen",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "HarperCollins"
+}, {
+  "number" : "44",
+  "title" : "Freakonomics",
+  "author" : "Dubner, Stephen",
+  "genre" : "science",
+  "subGenre" : "economics",
+  "publisher" : "Penguin"
+}, {
+  "number" : "45",
+  "title" : "Hidden Connections, The",
+  "author" : "Capra, Fritjof",
+  "genre" : "science",
+  "subGenre" : "physics",
+  "publisher" : "HarperCollins"
+}, {
+  "number" : "46",
+  "title" : "Story of Philosophy, The",
+  "author" : "Durant, Will",
+  "genre" : "philosophy",
+  "subGenre" : "history",
+  "publisher" : "Pocket"
+}, {
+  "number" : "47",
+  "title" : "Asami Asami",
+  "author" : "Deshpande, P L",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Mauj"
+}, {
+  "number" : "48",
+  "title" : "Journal of a Novel",
+  "author" : "Steinbeck, John",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Penguin"
+}, {
+  "number" : "49",
+  "title" : "Once There Was a War",
+  "author" : "Steinbeck, John",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Penguin"
+}, {
+  "number" : "50",
+  "title" : "Moon is Down, The",
+  "author" : "Steinbeck, John",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Penguin"
+}, {
+  "number" : "51",
+  "title" : "Brethren, The",
+  "author" : "Grisham, John",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Random House"
+}, {
+  "number" : "52",
+  "title" : "In a Free State",
+  "author" : "Naipaul, V. S.",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Rupa"
+}, {
+  "number" : "53",
+  "title" : "Catch 22",
+  "author" : "Heller, Joseph",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Random House"
+}, {
+  "number" : "54",
+  "title" : "Complete Mastermind, The",
+  "author" : "BBC",
+  "genre" : "nonfiction",
+  "subGenre" : "trivia",
+  "publisher" : "BBC"
+}, {
+  "number" : "55",
+  "title" : "Dylan on Dylan",
+  "author" : "Dylan, Bob",
+  "genre" : "nonfiction",
+  "subGenre" : "autobiography",
+  "publisher" : "Random House"
+}, {
+  "number" : "56",
+  "title" : "Soft Computing & Intelligent Systems",
+  "author" : "Gupta, Madan",
+  "genre" : "tech",
+  "subGenre" : "data_science",
+  "publisher" : "Elsevier"
+}, {
+  "number" : "57",
+  "title" : "Textbook of Economic Theory",
+  "author" : "Stonier, Alfred",
+  "genre" : "tech",
+  "subGenre" : "economics",
+  "publisher" : "Pearson"
+}, {
+  "number" : "58",
+  "title" : "Econometric Analysis",
+  "author" : "Greene, W. H.",
+  "genre" : "tech",
+  "subGenre" : "economics",
+  "publisher" : "Pearson"
+}, {
+  "number" : "59",
+  "title" : "Learning OpenCV",
+  "author" : "Bradsky, Gary",
+  "genre" : "tech",
+  "subGenre" : "signal_processing",
+  "publisher" : "O'Reilly"
+}, {
+  "number" : "60",
+  "title" : "Data Structures Using C & C++",
+  "author" : "Tanenbaum, Andrew",
+  "genre" : "tech",
+  "subGenre" : "computer_science",
+  "publisher" : "Prentice Hall"
+}, {
+  "number" : "61",
+  "title" : "Computer Vision, A Modern Approach",
+  "author" : "Forsyth, David",
+  "genre" : "tech",
+  "subGenre" : "signal_processing",
+  "publisher" : "Pearson"
+}, {
+  "number" : "62",
+  "title" : "Principles of Communication Systems",
+  "author" : "Taub, Schilling",
+  "genre" : "tech",
+  "subGenre" : "signal_processing",
+  "publisher" : "TMH"
+}, {
+  "number" : "63",
+  "title" : "Let Us C",
+  "author" : "Kanetkar, Yashwant",
+  "genre" : "tech",
+  "subGenre" : "computer_science",
+  "publisher" : "Prentice Hall"
+}, {
+  "number" : "64",
+  "title" : "Amulet of Samarkand, The",
+  "author" : "Stroud, Jonathan",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Random House"
+}, {
+  "number" : "65",
+  "title" : "Crime and Punishment",
+  "author" : "Dostoevsky, Fyodor",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Penguin"
+}, {
+  "number" : "66",
+  "title" : "Angels & Demons",
+  "author" : "Brown, Dan",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Random House"
+}, {
+  "number" : "67",
+  "title" : "Argumentative Indian, The",
+  "author" : "Sen, Amartya",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Picador"
+}, {
+  "number" : "68",
+  "title" : "Sea of Poppies",
+  "author" : "Ghosh, Amitav",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Penguin"
+}, {
+  "number" : "69",
+  "title" : "Idea of Justice, The",
+  "author" : "Sen, Amartya",
+  "genre" : "philosophy",
+  "subGenre" : "economics",
+  "publisher" : "Penguin"
+}, {
+  "number" : "70",
+  "title" : "Raisin in the Sun, A",
+  "author" : "Hansberry, Lorraine",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Penguin"
+}, {
+  "number" : "71",
+  "title" : "All the President's Men",
+  "author" : "Woodward, Bob",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Random House"
+}, {
+  "number" : "72",
+  "title" : "Prisoner of Birth, A",
+  "author" : "Archer, Jeffery",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Pan"
+}, {
+  "number" : "73",
+  "title" : "Scoop!",
+  "author" : "Nayar, Kuldip",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "HarperCollins"
+}, {
+  "number" : "74",
+  "title" : "Ahe Manohar Tari",
+  "author" : "Deshpande, Sunita",
+  "genre" : "nonfiction",
+  "subGenre" : "autobiography",
+  "publisher" : "Mauj"
+}, {
+  "number" : "75",
+  "title" : "Last Mughal, The",
+  "author" : "Dalrymple, William",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Penguin"
+}, {
+  "number" : "76",
+  "title" : "Social Choice & Welfare, Vol 39 No. 1",
+  "author" : "Various",
+  "genre" : "tech",
+  "subGenre" : "economics",
+  "publisher" : "Springer"
+}, {
+  "number" : "77",
+  "title" : "Radiowaril Bhashane & Shrutika",
+  "author" : "Deshpande, P L",
+  "genre" : "nonfiction",
+  "subGenre" : "misc",
+  "publisher" : "Mauj"
+}, {
+  "number" : "78",
+  "title" : "Gun Gayin Awadi",
+  "author" : "Deshpande, P L",
+  "genre" : "nonfiction",
+  "subGenre" : "misc",
+  "publisher" : "Mauj"
+}, {
+  "number" : "79",
+  "title" : "Aghal Paghal",
+  "author" : "Deshpande, P L",
+  "genre" : "nonfiction",
+  "subGenre" : "misc",
+  "publisher" : "Mauj"
+}, {
+  "number" : "80",
+  "title" : "Maqta-e-Ghalib",
+  "author" : "Garg, Sanjay",
+  "genre" : "nonfiction",
+  "subGenre" : "poetry",
+  "publisher" : "Mauj"
+}, {
+  "number" : "81",
+  "title" : "Beyond Degrees",
+  "author" : "",
+  "genre" : "philosophy",
+  "subGenre" : "education",
+  "publisher" : "HarperCollins"
+}, {
+  "number" : "82",
+  "title" : "Manasa",
+  "author" : "Kale, V P",
+  "genre" : "nonfiction",
+  "subGenre" : "misc",
+  "publisher" : "Mauj"
+}, {
+  "number" : "83",
+  "title" : "India from Midnight to Milennium",
+  "author" : "Tharoor, Shashi",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Penguin"
+}, {
+  "number" : "84",
+  "title" : "World's Greatest Trials, The",
+  "author" : "John Doe",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Penguin"
+}, {
+  "number" : "85",
+  "title" : "Great Indian Novel, The",
+  "author" : "Tharoor, Shashi",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Penguin"
+}, {
+  "number" : "86",
+  "title" : "O Jerusalem!",
+  "author" : "Lapierre, Dominique",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "vikas"
+}, {
+  "number" : "87",
+  "title" : "City of Joy, The",
+  "author" : "Lapierre, Dominique",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "vikas"
+}, {
+  "number" : "88",
+  "title" : "Freedom at Midnight",
+  "author" : "Lapierre, Dominique",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "vikas"
+}, {
+  "number" : "89",
+  "title" : "Winter of Our Discontent, The",
+  "author" : "Steinbeck, John",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Penguin"
+}, {
+  "number" : "90",
+  "title" : "On Education",
+  "author" : "Russell, Bertrand",
+  "genre" : "philosophy",
+  "subGenre" : "education",
+  "publisher" : "Routledge"
+}, {
+  "number" : "91",
+  "title" : "Free Will",
+  "author" : "Harris, Sam",
+  "genre" : "nonfiction",
+  "subGenre" : "psychology",
+  "publisher" : "FreePress"
+}, {
+  "number" : "92",
+  "title" : "Bookless in Baghdad",
+  "author" : "Tharoor, Shashi",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Penguin"
+}, {
+  "number" : "93",
+  "title" : "Case of the Lame Canary, The",
+  "author" : "Gardner, Earle Stanley",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Penguin"
+}, {
+  "number" : "94",
+  "title" : "Theory of Everything, The",
+  "author" : "Hawking, Stephen",
+  "genre" : "science",
+  "subGenre" : "physics",
+  "publisher" : "Jaico"
+}, {
+  "number" : "95",
+  "title" : "New Markets & Other Essays",
+  "author" : "Drucker, Peter",
+  "genre" : "science",
+  "subGenre" : "economics",
+  "publisher" : "Penguin"
+}, {
+  "number" : "96",
+  "title" : "Electric Universe",
+  "author" : "Bodanis, David",
+  "genre" : "science",
+  "subGenre" : "physics",
+  "publisher" : "Penguin"
+}, {
+  "number" : "97",
+  "title" : "Hunchback of Notre Dame, The",
+  "author" : "Hugo, Victor",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Random House"
+}, {
+  "number" : "98",
+  "title" : "Burning Bright",
+  "author" : "Steinbeck, John",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Penguin"
+}, {
+  "number" : "99",
+  "title" : "Age of Discontuinity, The",
+  "author" : "Drucker, Peter",
+  "genre" : "nonfiction",
+  "subGenre" : "economics",
+  "publisher" : "Random House"
+}, {
+  "number" : "100",
+  "title" : "Doctor in the Nude",
+  "author" : "Gordon, Richard",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Penguin"
+}, {
+  "number" : "101",
+  "title" : "Down and Out in Paris & London",
+  "author" : "Orwell, George",
+  "genre" : "nonfiction",
+  "subGenre" : "autobiography",
+  "publisher" : "Penguin"
+}, {
+  "number" : "102",
+  "title" : "Identity & Violence",
+  "author" : "Sen, Amartya",
+  "genre" : "philosophy",
+  "subGenre" : "philosophy",
+  "publisher" : "Penguin"
+}, {
+  "number" : "103",
+  "title" : "Beyond the Three Seas",
+  "author" : "Dalrymple, William",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Random House"
+}, {
+  "number" : "104",
+  "title" : "World's Greatest Short Stories, The",
+  "author" : "",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Jaico"
+}, {
+  "number" : "105",
+  "title" : "Talking Straight",
+  "author" : "Iacoca, Lee",
+  "genre" : "nonfiction",
+  "subGenre" : "autobiography",
+  "publisher" : "Penguin"
+}, {
+  "number" : "106",
+  "title" : "Maugham's Collected Short Stories, Vol 3",
+  "author" : "Maugham, William S",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Vintage"
+}, {
+  "number" : "107",
+  "title" : "Phantom of Manhattan, The",
+  "author" : "Forsyth, Frederick",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Penguin"
+}, {
+  "number" : "108",
+  "title" : "Ashenden of The British Agent",
+  "author" : "Maugham, William S",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Vintage"
+}, {
+  "number" : "109",
+  "title" : "Zen & The Art of Motorcycle Maintenance",
+  "author" : "Pirsig, Robert",
+  "genre" : "philosophy",
+  "subGenre" : "autobiography",
+  "publisher" : "Vintage"
+}, {
+  "number" : "110",
+  "title" : "Great War for Civilization, The",
+  "author" : "Fisk, Robert",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "HarperCollins"
+}, {
+  "number" : "111",
+  "title" : "We the Living",
+  "author" : "Rand, Ayn",
+  "genre" : "fiction",
+  "subGenre" : "novel",
+  "publisher" : "Penguin"
+}, {
+  "number" : "112",
+  "title" : "Artist and the Mathematician, The",
+  "author" : "Aczel, Amir",
+  "genre" : "science",
+  "subGenre" : "mathematics",
+  "publisher" : "HighStakes"
+}, {
+  "number" : "113",
+  "title" : "History of Western Philosophy",
+  "author" : "Russell, Bertrand",
+  "genre" : "philosophy",
+  "subGenre" : "philosophy",
+  "publisher" : "Routledge"
+}, {
+  "number" : "114",
+  "title" : "Selected Short Stories",
+  "author" : "",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Jaico"
+}, {
+  "number" : "115",
+  "title" : "Rationality & Freedom",
+  "author" : "Sen, Amartya",
+  "genre" : "science",
+  "subGenre" : "economics",
+  "publisher" : "Springer"
+}, {
+  "number" : "116",
+  "title" : "Clash of Civilizations and Remaking of the World Order",
+  "author" : "Huntington, Samuel",
+  "genre" : "nonfiction",
+  "subGenre" : "history",
+  "publisher" : "Simon&Schuster"
+}, {
+  "number" : "117",
+  "title" : "Uncommon Wisdom",
+  "author" : "Capra, Fritjof",
+  "genre" : "nonfiction",
+  "subGenre" : "anthology",
+  "publisher" : "Fontana"
+}, {
+  "number" : "118",
+  "title" : "One",
+  "author" : "Bach, Richard",
+  "genre" : "nonfiction",
+  "subGenre" : "autobiography",
+  "publisher" : "Dell"
+}, {
+  "number" : "119",
+  "title" : "Karl Marx Biography",
+  "author" : "Marx, Karl",
+  "genre" : "nonfiction",
+  "subGenre" : "autobiography",
+  "publisher" : "Penguin"
+}, {
+  "number" : "120",
+  "title" : "To Sir With Love",
+  "author" : "Braithwaite",
+  "genre" : "fiction",
+  "subGenre" : "classic",
+  "publisher" : "Penguin"
+} ]

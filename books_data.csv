@@ -1,4 +1,4 @@
-Number,Title,Author,Genre,SubGenre,Publisher
+number,title,author,genre,subGenre,publisher
 1,Fundamentals of Wavelets,"Goswami, Jaideva",tech,signal_processing,Wiley
 2,Data Smart,"Foreman, John",tech,data_science,Wiley
 3,God Created the Integers,"Hawking, Stephen",tech,mathematics,Penguin

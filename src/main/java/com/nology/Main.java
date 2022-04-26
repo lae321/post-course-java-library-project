@@ -1,5 +1,6 @@
 package com.nology;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
@@ -33,7 +34,17 @@ public class Main {
       ObjectMapper mapper = new ObjectMapper();
       mapper.enable(SerializationFeature.INDENT_OUTPUT);
       mapper.writeValue(new File("src/books_data.json"), list);
+
+      List<Book> bookList = mapper.readValue(new File("C:\\Users\\lae32\\Desktop\\sandbox\\java-library-project\\src" +
+          "\\books_data.json"), new TypeReference<>() {});
+
+      for (Book book : bookList ) {
+        System.out.println(book);
     }
+
+
+    }
+
   }
   /*
   TODO:
