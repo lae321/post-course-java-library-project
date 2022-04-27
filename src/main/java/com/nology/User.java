@@ -1,14 +1,24 @@
 package com.nology;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.util.ArrayList;
 
 public class User {
+  @JsonProperty("name")
   private String name;
-  private ArrayList<Book> currentLoans;
 
-  public User(String name, ArrayList<Book> currentLoans) {
+  @JsonProperty("currentLoans")
+  private ArrayList<Book> currentLoans = new ArrayList <> ();
+
+  public User() {}
+
+  public User(String name) {
     this.name = name;
-    this.currentLoans = currentLoans;
+  }
+
+  public String getName() {
+    return name;
   }
 
   public ArrayList<Book> getCurrentLoans() {
@@ -23,5 +33,10 @@ public class User {
       }
     }
     return "You cannot return this book as you do not have it on loan";
+  }
+
+  @Override
+  public String toString() {
+    return "User{" + "name='" + name + '\'' + ", currentLoans=" + currentLoans + '}';
   }
 }
