@@ -50,6 +50,10 @@ public class Main {
             new TypeReference<>() {});
   }
 
+  public static void bookListToJson() throws IOException {
+    writer.writeValue(new File("src/books_data.json"), bookList);
+  }
+
   public static void userJsonToList() throws IOException {
     userList =
         mapper.readValue(
@@ -100,14 +104,13 @@ public class Main {
   }
 
   public static void login() throws IOException {
-//    String testNum = scanner.nextLine();
-//    for (Book book : bookList ) {
-//      System.out.println(book.getNumber());
-//      if (testNum.equals(book.getNumber())) {
-//        System.out.println("This works m8");
-//      }
-//    }
-
+    //    String testNum = scanner.nextLine();
+    //    for (Book book : bookList ) {
+    //      System.out.println(book.getNumber());
+    //      if (testNum.equals(book.getNumber())) {
+    //        System.out.println("This works m8");
+    //      }
+    //    }
 
     System.out.println(
         "Welcome to the Library System. Press 1 to login using an existing "
@@ -148,9 +151,10 @@ public class Main {
         System.out.println(book);
       }
     }
+    System.out.println(" ");
     System.out.println(
-        "To loan a book, enter the book's number below. Or type x to return to the"
-            + " User Options page");
+        "To loan a book, enter the book's Number below. Or enter x to return to the"
+            + " User Options page.");
     System.out.println("Book number:");
     String bookOrExit = scanner.nextLine();
 
@@ -158,17 +162,18 @@ public class Main {
       userOptions(existingUser);
     } else {
       for (Book book : bookList) {
-        if (bookOrExit.equals(book.getNumber())) {
+        if (bookOrExit.equals(book.getNumber()) && !book.getOnLoan()) {
           book.loanBook();
           for (User user : userList) {
             if (user.getName().equals(existingUser)) {
               user.getCurrentLoans().add(book);
+              bookListToJson();
+              bookJsonToList();
+              userListToJson();
+              userJsonToList();
               break;
             }
           }
-          bookJsonToList();
-          userListToJson();
-          userJsonToList();
           break;
         }
       }
@@ -182,35 +187,43 @@ public class Main {
     System.out.println("Hello, " + existingUser + ".");
     System.out.println("Press 1 to view your Current Loans.");
     System.out.println("Press 2 to Loan a Book");
-    System.out.println("Press 3 to logout.");
+    System.out.println("Press 3 to Logout.");
     String userOption = scanner.nextLine();
 
     switch (userOption) {
       case "1":
         for (User user : userList) {
           if (user.getName().equals(existingUser)) {
-            System.out.println(user.getCurrentLoans());
+            user.printCurrentLoans();
+            System.out.println("Press any key to return to the User Options page.");
+            scanner.nextLine();
+            userOptions(existingUser);
           }
         }
         break;
       case "2":
         loanBook(existingUser);
+        System.out.println("Press any button to return to the User Options Page");
+        scanner.nextLine();
+        userOptions(existingUser);
         break;
       case "3":
         System.out.println("Thank you for using the Library System.");
         System.out.println("Press any key to continue.");
         scanner.nextLine();
+        login();
         break;
       default:
-        System.out.println("Invalid input. Press any key to return to the User Options page");
+        System.out.println("Invalid input. Press any key to return to the User Options page.");
         scanner.nextLine();
         userOptions(existingUser);
     }
   }
 
   public static void main(String[] args) throws IOException {
-    bookCsvToJson();
+    // bookCsvToJson();
     bookJsonToList();
+    bookListToJson();
     userJsonToList();
     userListToJson();
     login();
@@ -218,8 +231,7 @@ public class Main {
 
   /*
   TODO:
-    Print a message if the user has no books loaned and allow them to return to the User Options
-    page.
+    Figure out where to put invalid input message in userOptions().
 
 
   */

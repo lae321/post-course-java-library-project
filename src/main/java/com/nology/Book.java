@@ -22,10 +22,24 @@ public class Book {
   private String publisher;
 
   private Boolean onLoan = false;
+
+  @JsonProperty("timesLoaned")
   private int timesLoaned = 0;
 
   public String getNumber() {
     return number;
+  }
+
+  public String getTitle() {
+    return title;
+  }
+
+  public String getAuthor() {
+    return author;
+  }
+
+  public String getGenre() {
+    return genre;
   }
 
   public Boolean getOnLoan() {
@@ -41,6 +55,7 @@ public class Book {
       setOnLoan();
       timesLoaned++;
       System.out.println("You have loaned " + title + " by " + author + ". Happy reading!");
+      System.out.println(" ");
     }
   }
 

@@ -25,14 +25,27 @@ public class User {
     return currentLoans;
   }
 
-  public String returnBook(String bookName) {
+  public void printCurrentLoans() {
+    if (currentLoans.size() > 0) {
+      System.out.println("Your current loans are:");
+      for (Book book : currentLoans ) {
+        System.out.println(book.getTitle() + " by " + book.getAuthor() + ".");
+      }
+      System.out.println(" ");
+    } else {
+      System.out.println("You currently have no books on loan.");
+    }
+  }
+
+  public void returnBook() {
     for (Book book : currentLoans) {
       if (currentLoans.contains(book)) {
         book.setOnLoan();
-        return "Thank you for returning this book";
+        currentLoans.remove(book);
+        System.out.println("Thank you for returning this book");
+        break;
       }
     }
-    return "You cannot return this book as you do not have it on loan";
   }
 
   @Override
