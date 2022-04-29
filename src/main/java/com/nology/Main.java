@@ -30,7 +30,7 @@ public class Main {
       while (csv.hasNext()) {
         List<String> x = csv.next();
         Map<String, String> obj = new LinkedHashMap<>();
-        for (int i = 0; i < fieldNames.size(); i++) {
+        for (int i = 0; i < Objects.requireNonNull(fieldNames).size(); i++) {
           obj.put(fieldNames.get(i), x.get(i));
         }
         list.add(obj);
@@ -57,30 +57,38 @@ public class Main {
                 "C:\\Users\\lae32\\Desktop\\sandbox\\java-library-project\\src"
                     + "\\user_data.json"),
             new TypeReference<>() {});
-    System.out.println(userList);
   }
 
   public static void userListToJson() throws IOException {
     writer.writeValue(new File("src/user_data.json"), userList);
   }
 
-  public static void checkUser(String existingUser) {
-    for (User user : userList ) {
+  public static void checkUser(String existingUser) throws IOException {
+    for (User user : userList) {
       if (user.getName().equals(existingUser)) {
-        System.out.println("Welcome " + existingUser + " press any key to continue.");
+        System.out.println("Welcome " + existingUser + ". Press any key to continue.");
+        scanner.nextLine();
+        userOptions(existingUser);
         return;
       }
     }
-    System.out.println("User " + existingUser + " not found. Please check you entered the " +
-       "correct username or create a new account. ");
+    System.out.println(
+        "User "
+            + existingUser
+            + " not found. Please check you entered the "
+            + "correct username or create a new account. ");
     System.out.println("Press any key to continue.");
+    login();
   }
 
   public static void createUser(String newUser) throws IOException {
-    for (User user : userList ) {
+    for (User user : userList) {
       if (user.getName().equals(newUser)) {
-        System.out.println("Sorry, the username " + newUser + " is already taken. Please choose " +
-          "a different username.");
+        System.out.println(
+            "Sorry, the username "
+                + newUser
+                + " is already taken. Please choose "
+                + "a different username.");
         return;
       }
     }
@@ -92,6 +100,15 @@ public class Main {
   }
 
   public static void login() throws IOException {
+//    String testNum = scanner.nextLine();
+//    for (Book book : bookList ) {
+//      System.out.println(book.getNumber());
+//      if (testNum.equals(book.getNumber())) {
+//        System.out.println("This works m8");
+//      }
+//    }
+
+
     System.out.println(
         "Welcome to the Library System. Press 1 to login using an existing "
             + "account. Press 2 to create a new account."
@@ -122,6 +139,75 @@ public class Main {
     }
   }
 
+  public static void loanBook(String existingUser) throws IOException {
+    System.out.println("Loan a Book.");
+    System.out.println("Press any key to view our available books.");
+    scanner.nextLine();
+    for (Book book : bookList) {
+      if (!book.getOnLoan()) {
+        System.out.println(book);
+      }
+    }
+    System.out.println(
+        "To loan a book, enter the book's number below. Or type x to return to the"
+            + " User Options page");
+    System.out.println("Book number:");
+    String bookOrExit = scanner.nextLine();
+
+    if (bookOrExit.equals("x")) {
+      userOptions(existingUser);
+    } else {
+      for (Book book : bookList) {
+        if (bookOrExit.equals(book.getNumber())) {
+          book.loanBook();
+          for (User user : userList) {
+            if (user.getName().equals(existingUser)) {
+              user.getCurrentLoans().add(book);
+              break;
+            }
+          }
+          bookJsonToList();
+          userListToJson();
+          userJsonToList();
+          break;
+        }
+      }
+      System.out.println("Invalid input. Press any key to return to the Loan Book page.");
+      scanner.nextLine();
+      loanBook(existingUser);
+    }
+  }
+
+  public static void userOptions(String existingUser) throws IOException {
+    System.out.println("Hello, " + existingUser + ".");
+    System.out.println("Press 1 to view your Current Loans.");
+    System.out.println("Press 2 to Loan a Book");
+    System.out.println("Press 3 to logout.");
+    String userOption = scanner.nextLine();
+
+    switch (userOption) {
+      case "1":
+        for (User user : userList) {
+          if (user.getName().equals(existingUser)) {
+            System.out.println(user.getCurrentLoans());
+          }
+        }
+        break;
+      case "2":
+        loanBook(existingUser);
+        break;
+      case "3":
+        System.out.println("Thank you for using the Library System.");
+        System.out.println("Press any key to continue.");
+        scanner.nextLine();
+        break;
+      default:
+        System.out.println("Invalid input. Press any key to return to the User Options page");
+        scanner.nextLine();
+        userOptions(existingUser);
+    }
+  }
+
   public static void main(String[] args) throws IOException {
     bookCsvToJson();
     bookJsonToList();
@@ -132,12 +218,10 @@ public class Main {
 
   /*
   TODO:
-    Login functions:
-      existingUser() - takes entered username and presents options including view loans and
-      loan book. If username entered is admin, the user is prompted for the admin password.
-      Admin options are presented following authentication including report.
-      newUser() - takes entered username and checks whether it already exists in the users List
-      . If not, the user is created.
+    Print a message if the user has no books loaned and allow them to return to the User Options
+    page.
+
+
   */
 
 }

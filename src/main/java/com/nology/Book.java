@@ -24,17 +24,24 @@ public class Book {
   private Boolean onLoan = false;
   private int timesLoaned = 0;
 
+  public String getNumber() {
+    return number;
+  }
+
+  public Boolean getOnLoan() {
+    return onLoan;
+  }
+
   public void setOnLoan() {
     this.onLoan = !onLoan;
   }
 
-  public String loanBook() {
+  public void loanBook() {
     if (!onLoan) {
       setOnLoan();
       timesLoaned++;
-      return "You have loaned this book";
+      System.out.println("You have loaned " + title + " by " + author + ". Happy reading!");
     }
-    return "Sorry, this book is already on loan";
   }
 
   @Override
