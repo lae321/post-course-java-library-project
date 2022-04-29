@@ -1,0 +1,19 @@
+[ {
+  "name" : "Lewis",
+  "currentLoans" : [ {
+    "onLoan" : true,
+    "number" : "118",
+    "title" : "One",
+    "author" : "Bach, Richard",
+    "genre" : "nonfiction",
+    "subGenre" : "autobiography",
+    "publisher" : "Dell",
+    "timesLoaned" : 1
+  } ]
+}, {
+  "name" : "Admin",
+  "currentLoans" : [ ]
+}, {
+  "name" : "Olivia",
+  "currentLoans" : [ ]
+} ]
