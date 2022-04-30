@@ -42,6 +42,14 @@ public class Book {
     return genre;
   }
 
+  public String getSubGenre() {
+    return subGenre;
+  }
+
+  public String getPublisher() {
+    return publisher;
+  }
+
   public Boolean getOnLoan() {
     return onLoan;
   }
@@ -86,4 +94,6 @@ public class Book {
         + timesLoaned
         + '}';
   }
+
+
 }

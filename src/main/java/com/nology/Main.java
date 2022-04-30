@@ -148,39 +148,52 @@ public class Main {
     scanner.nextLine();
     for (Book book : bookList) {
       if (!book.getOnLoan()) {
-        System.out.println(book);
+        System.out.println(
+            "Number: "
+                + book.getNumber()
+                + " - "
+                + book.getTitle()
+                + " by "
+                + book.getAuthor()
+                + ". Genre: "
+                + book.getGenre()
+                + ", Sub-genre: "
+                + book.getSubGenre()
+                + ". Publisher: "
+                + book.getPublisher()
+                + ".");
       }
     }
     System.out.println(" ");
     System.out.println(
-        "To loan a book, enter the book's Number below. Or enter x to return to the"
+        "To loan a book, enter the book's Number below. Or enter X to return to the"
             + " User Options page.");
     System.out.println("Book number:");
     String bookOrExit = scanner.nextLine();
 
-    if (bookOrExit.equals("x")) {
+    if (bookOrExit.equals("x") || bookOrExit.equals("X")) {
       userOptions(existingUser);
-    } else {
-      for (Book book : bookList) {
-        if (bookOrExit.equals(book.getNumber()) && !book.getOnLoan()) {
-          book.loanBook();
-          for (User user : userList) {
-            if (user.getName().equals(existingUser)) {
-              user.getCurrentLoans().add(book);
-              bookListToJson();
-              bookJsonToList();
-              userListToJson();
-              userJsonToList();
-              break;
-            }
+      return;
+    }
+
+    for (Book book : bookList) {
+      if (bookOrExit.equals(book.getNumber()) && !book.getOnLoan()) {
+        book.loanBook();
+        for (User user : userList) {
+          if (user.getName().equals(existingUser)) {
+            user.getCurrentLoans().add(book);
+            bookListToJson();
+            bookJsonToList();
+            userListToJson();
+            userJsonToList();
+            return;
           }
-          break;
         }
       }
-      System.out.println("Invalid input. Press any key to return to the Loan Book page.");
-      scanner.nextLine();
-      loanBook(existingUser);
     }
+    System.out.println("Invalid input. Press any key to return to the Loan Book page.");
+    scanner.nextLine();
+    loanBook(existingUser);
   }
 
   public static void userOptions(String existingUser) throws IOException {
@@ -231,7 +244,9 @@ public class Main {
 
   /*
   TODO:
-    Figure out where to put invalid input message in userOptions().
+    Return book method.
+    Admin password.
+    Admin report method.
 
 
   */

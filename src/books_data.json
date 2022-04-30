@@ -6,7 +6,7 @@
   "genre" : "tech",
   "subGenre" : "signal_processing",
   "publisher" : "Wiley",
-  "timesLoaned" : 0
+  "timesLoaned" : 2
 }, {
   "onLoan" : false,
   "number" : "2",
@@ -15,7 +15,7 @@
   "genre" : "tech",
   "subGenre" : "data_science",
   "publisher" : "Wiley",
-  "timesLoaned" : 0
+  "timesLoaned" : 1
 }, {
   "onLoan" : false,
   "number" : "3",
@@ -1052,7 +1052,7 @@
   "publisher" : "Fontana",
   "timesLoaned" : 0
 }, {
-  "onLoan" : true,
+  "onLoan" : false,
   "number" : "118",
   "title" : "One",
   "author" : "Bach, Richard",
@@ -1077,5 +1077,5 @@
   "genre" : "fiction",
   "subGenre" : "classic",
   "publisher" : "Penguin",
-  "timesLoaned" : 0
+  "timesLoaned" : 1
 } ]
