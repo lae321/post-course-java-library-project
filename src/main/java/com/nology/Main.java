@@ -104,14 +104,6 @@ public class Main {
   }
 
   public static void login() throws IOException {
-    //    String testNum = scanner.nextLine();
-    //    for (Book book : bookList ) {
-    //      System.out.println(book.getNumber());
-    //      if (testNum.equals(book.getNumber())) {
-    //        System.out.println("This works m8");
-    //      }
-    //    }
-
     System.out.println(
         "Welcome to the Library System. Press 1 to login using an existing "
             + "account. Press 2 to create a new account."
@@ -196,6 +188,27 @@ public class Main {
     loanBook(existingUser);
   }
 
+  public static void returnBook(String existingUser) throws IOException {
+    System.out.println("Please enter the Number of the book you would like to return.");
+    System.out.println("Book number:");
+    String bookNumber = scanner.nextLine();
+    for (User user : userList) {
+      if (user.getName().equals(existingUser)) {
+        for (Book book : user.getCurrentLoans()) {
+          if (bookNumber.equals(book.getNumber())) {
+            user.getCurrentLoans().remove(book);
+            book.setOnLoan();
+            bookListToJson();
+            bookJsonToList();
+            userListToJson();
+            userJsonToList();
+            return;
+          }
+        }
+      }
+    }
+  }
+
   public static void userOptions(String existingUser) throws IOException {
     System.out.println("Hello, " + existingUser + ".");
     System.out.println("Press 1 to view your Current Loans.");
@@ -208,9 +221,26 @@ public class Main {
         for (User user : userList) {
           if (user.getName().equals(existingUser)) {
             user.printCurrentLoans();
-            System.out.println("Press any key to return to the User Options page.");
-            scanner.nextLine();
-            userOptions(existingUser);
+            if (user.getCurrentLoans().size() > 0) {
+              System.out.println(
+                  "Press 1 to return to the User Options page or press 2 to Return a"
+                      + " book."
+                      + ".");
+              String exitOrReturnBook = scanner.nextLine();
+              switch (exitOrReturnBook) {
+                case "1":
+                  userOptions(existingUser);
+                  break;
+                case "2":
+                  returnBook(existingUser);
+                  break;
+              }
+            } else {
+              System.out.println(" ");
+              System.out.println("Press any key to return to the User Options page.");
+              scanner.nextLine();
+              userOptions(existingUser);
+            }
           }
         }
         break;
@@ -244,7 +274,7 @@ public class Main {
 
   /*
   TODO:
-    Return book method.
+    Return book method - doesn't update onLoan - why?
     Admin password.
     Admin report method.
 
