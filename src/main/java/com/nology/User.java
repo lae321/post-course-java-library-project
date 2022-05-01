@@ -37,17 +37,6 @@ public class User {
     }
   }
 
-  public void returnBook() {
-    for (Book book : currentLoans) {
-      if (currentLoans.contains(book)) {
-        book.setOnLoan();
-        currentLoans.remove(book);
-        System.out.println("Thank you for returning this book");
-        break;
-      }
-    }
-  }
-
   @Override
   public String toString() {
     return "User{" + "name='" + name + '\'' + ", currentLoans=" + currentLoans + '}';

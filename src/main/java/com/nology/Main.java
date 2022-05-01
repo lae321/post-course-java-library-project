@@ -298,6 +298,11 @@ public class Main {
                 case "2":
                   returnBook(existingUser);
                   break;
+                default:
+                  System.out.println(
+                      "Invalid input. Press Enter to return to the User Options " + "page.");
+                  scanner.nextLine();
+                  userOptions(existingUser);
               }
             } else {
               System.out.println(" ");

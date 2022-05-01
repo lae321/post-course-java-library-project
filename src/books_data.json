@@ -1052,14 +1052,14 @@
   "publisher" : "Fontana",
   "timesLoaned" : 0
 }, {
-  "onLoan" : false,
+  "onLoan" : true,
   "number" : "118",
   "title" : "One",
   "author" : "Bach, Richard",
   "genre" : "nonfiction",
   "subGenre" : "autobiography",
   "publisher" : "Dell",
-  "timesLoaned" : 16
+  "timesLoaned" : 19
 }, {
   "onLoan" : false,
   "number" : "119",
