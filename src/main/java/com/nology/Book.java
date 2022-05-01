@@ -42,8 +42,20 @@ public class Book {
     return genre;
   }
 
+  public String getSubGenre() {
+    return subGenre;
+  }
+
+  public String getPublisher() {
+    return publisher;
+  }
+
   public Boolean getOnLoan() {
     return onLoan;
+  }
+
+  public int getTimesLoaned() {
+    return timesLoaned;
   }
 
   public void setOnLoan() {
@@ -86,4 +98,6 @@ public class Book {
         + timesLoaned
         + '}';
   }
+
+
 }

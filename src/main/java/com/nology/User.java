@@ -29,7 +29,7 @@ public class User {
     if (currentLoans.size() > 0) {
       System.out.println("Your current loans are:");
       for (Book book : currentLoans ) {
-        System.out.println(book.getTitle() + " by " + book.getAuthor() + ".");
+        System.out.println("Number: " + book.getNumber() + " - " + book.getTitle() + " by " + book.getAuthor() + ".");
       }
       System.out.println(" ");
     } else {

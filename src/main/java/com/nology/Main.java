@@ -67,12 +67,62 @@ public class Main {
     writer.writeValue(new File("src/user_data.json"), userList);
   }
 
+  public static void adminOptions() throws IOException {
+    System.out.println("Hello Admin. Press 1 to view the Library Report or 2 to Logout.");
+    String adminInput = scanner.nextLine();
+    switch (adminInput) {
+      case "1":
+        for (Book book : bookList) {
+          System.out.println(
+              "Number: "
+                  + book.getNumber()
+                  + " - "
+                  + book.getTitle()
+                  + " by "
+                  + book.getAuthor()
+                  + ". Times loaned: "
+                  + book.getTimesLoaned()
+                  + ". Currently on loan: "
+                  + book.getOnLoan()
+                  + ".");
+        }
+        System.out.println(" ");
+        System.out.println("Press Enter to return to the Admin Options page.");
+        scanner.nextLine();
+        adminOptions();
+        break;
+      case "2":
+        System.out.println("Thank you for using the Library System.");
+        System.out.println("Press Enter to Logout.");
+        scanner.nextLine();
+        login();
+        break;
+      default:
+        System.out.println("Invalid input. Press Enter to return to the Admin Options page.");
+        scanner.nextLine();
+        adminOptions();
+    }
+  }
+
   public static void checkUser(String existingUser) throws IOException {
     for (User user : userList) {
       if (user.getName().equals(existingUser)) {
-        System.out.println("Welcome " + existingUser + ". Press any key to continue.");
-        scanner.nextLine();
-        userOptions(existingUser);
+        if (existingUser.equals("Admin")) {
+          System.out.println("Please enter the password for Admin.");
+          System.out.println("Password:");
+          String adminPassword = scanner.nextLine();
+          if ("admin".equals(adminPassword)) {
+            adminOptions();
+          } else {
+            System.out.println("Incorrect password. Press Enter to return to the Login page.");
+            scanner.nextLine();
+            login();
+          }
+        } else {
+          System.out.println("Welcome " + existingUser + ". Press Enter to continue.");
+          scanner.nextLine();
+          userOptions(existingUser);
+        }
         return;
       }
     }
@@ -81,7 +131,8 @@ public class Main {
             + existingUser
             + " not found. Please check you entered the "
             + "correct username or create a new account. ");
-    System.out.println("Press any key to continue.");
+    System.out.println("Press Enter to continue.");
+    scanner.nextLine();
     login();
   }
 
@@ -93,6 +144,8 @@ public class Main {
                 + newUser
                 + " is already taken. Please choose "
                 + "a different username.");
+        System.out.println(" ");
+        System.out.println("Press Enter to return to the Login page.");
         return;
       }
     }
@@ -100,35 +153,27 @@ public class Main {
     userList.add(user);
     userListToJson();
     System.out.println("Success! A new account for " + newUser + " has been created.");
-    System.out.println("Press any key to return to the login page.");
+    System.out.println("Press Enter to return to the login page.");
   }
 
   public static void login() throws IOException {
-    //    String testNum = scanner.nextLine();
-    //    for (Book book : bookList ) {
-    //      System.out.println(book.getNumber());
-    //      if (testNum.equals(book.getNumber())) {
-    //        System.out.println("This works m8");
-    //      }
-    //    }
-
     System.out.println(
-        "Welcome to the Library System. Press 1 to login using an existing "
-            + "account. Press 2 to create a new account."
+        "Welcome to the Library System. Press 1 to Login using an Existing "
+            + "Account. Press 2 to create a New Account."
             + " ");
     String loginOrSignup = scanner.nextLine();
 
     switch (loginOrSignup) {
       case "1":
-        System.out.println("Hello, existing user.");
-        System.out.println("Please enter your username below.");
+        System.out.println("Hello, Existing User.");
+        System.out.println("Please enter your Username below.");
         System.out.println("Username:");
         String existingUser = scanner.nextLine();
         checkUser(existingUser);
         break;
       case "2":
         System.out.println("Hello, new user.");
-        System.out.println("Please enter your desired username below.");
+        System.out.println("Please enter your desired Username below.");
         System.out.println("Username:");
         String newUser = scanner.nextLine();
         createUser(newUser);
@@ -136,7 +181,7 @@ public class Main {
         login();
         break;
       default:
-        System.out.println("Invalid input. Press any key to return to the welcome page.");
+        System.out.println("Invalid input. Press Enter to return to the Welcome page.");
         scanner.nextLine();
         login();
     }
@@ -144,43 +189,90 @@ public class Main {
 
   public static void loanBook(String existingUser) throws IOException {
     System.out.println("Loan a Book.");
-    System.out.println("Press any key to view our available books.");
+    System.out.println("Press Enter to view our available books.");
     scanner.nextLine();
     for (Book book : bookList) {
       if (!book.getOnLoan()) {
-        System.out.println(book);
+        System.out.println(
+            "Number: "
+                + book.getNumber()
+                + " - "
+                + book.getTitle()
+                + " by "
+                + book.getAuthor()
+                + ". Genre: "
+                + book.getGenre()
+                + ", Sub-genre: "
+                + book.getSubGenre()
+                + ". Publisher: "
+                + book.getPublisher()
+                + ".");
       }
     }
     System.out.println(" ");
     System.out.println(
-        "To loan a book, enter the book's Number below. Or enter x to return to the"
+        "To loan a book, enter the book's Number below. Or enter X to return to the"
             + " User Options page.");
     System.out.println("Book number:");
     String bookOrExit = scanner.nextLine();
 
-    if (bookOrExit.equals("x")) {
+    if (bookOrExit.equals("x") || bookOrExit.equals("X")) {
       userOptions(existingUser);
-    } else {
-      for (Book book : bookList) {
-        if (bookOrExit.equals(book.getNumber()) && !book.getOnLoan()) {
-          book.loanBook();
-          for (User user : userList) {
-            if (user.getName().equals(existingUser)) {
-              user.getCurrentLoans().add(book);
-              bookListToJson();
-              bookJsonToList();
-              userListToJson();
-              userJsonToList();
-              break;
-            }
+      return;
+    }
+
+    for (Book book : bookList) {
+      if (bookOrExit.equals(book.getNumber()) && !book.getOnLoan()) {
+        book.loanBook();
+        for (User user : userList) {
+          if (user.getName().equals(existingUser)) {
+            user.getCurrentLoans().add(book);
+            bookListToJson();
+            bookJsonToList();
+            userListToJson();
+            userJsonToList();
+            return;
           }
-          break;
         }
       }
-      System.out.println("Invalid input. Press any key to return to the Loan Book page.");
-      scanner.nextLine();
-      loanBook(existingUser);
     }
+    System.out.println("Invalid input. Press Enter to return to the Loan a Book page.");
+    scanner.nextLine();
+    loanBook(existingUser);
+  }
+
+  public static void returnBook(String existingUser) throws IOException {
+    System.out.println("Please enter the Number of the book you would like to return.");
+    System.out.println("Book number:");
+    String bookNumber = scanner.nextLine();
+    for (User user : userList) {
+      if (user.getName().equals(existingUser)) {
+        for (Book book : bookList) {
+          if (bookNumber.equals(book.getNumber())) {
+            for (Book userBook : user.getCurrentLoans()) {
+              if (userBook.getNumber().equals(bookNumber)) {
+                user.getCurrentLoans().remove(userBook);
+                book.setOnLoan();
+                System.out.println(
+                    "Thank you for returning " + book.getTitle() + " by " + book.getAuthor() + ".");
+                break;
+              }
+            }
+            bookListToJson();
+            bookJsonToList();
+            userListToJson();
+            userJsonToList();
+            System.out.println("Press Enter to return to the User Options page.");
+            scanner.nextLine();
+            userOptions(existingUser);
+            return;
+          }
+        }
+      }
+    }
+    System.out.println("Invalid input. Press Enter to return to the User Options page.");
+    scanner.nextLine();
+    userOptions(existingUser);
   }
 
   public static void userOptions(String existingUser) throws IOException {
@@ -195,26 +287,41 @@ public class Main {
         for (User user : userList) {
           if (user.getName().equals(existingUser)) {
             user.printCurrentLoans();
-            System.out.println("Press any key to return to the User Options page.");
-            scanner.nextLine();
-            userOptions(existingUser);
+            if (user.getCurrentLoans().size() > 0) {
+              System.out.println(
+                  "Press 1 to return to the User Options page or press 2 to Return a book.");
+              String exitOrReturnBook = scanner.nextLine();
+              switch (exitOrReturnBook) {
+                case "1":
+                  userOptions(existingUser);
+                  break;
+                case "2":
+                  returnBook(existingUser);
+                  break;
+              }
+            } else {
+              System.out.println(" ");
+              System.out.println("Press Enter to return to the User Options page.");
+              scanner.nextLine();
+              userOptions(existingUser);
+            }
           }
         }
         break;
       case "2":
         loanBook(existingUser);
-        System.out.println("Press any button to return to the User Options Page");
+        System.out.println("Press Enter to return to the User Options Page");
         scanner.nextLine();
         userOptions(existingUser);
         break;
       case "3":
         System.out.println("Thank you for using the Library System.");
-        System.out.println("Press any key to continue.");
+        System.out.println("Press Enter to Logout.");
         scanner.nextLine();
         login();
         break;
       default:
-        System.out.println("Invalid input. Press any key to return to the User Options page.");
+        System.out.println("Invalid input. Press Enter to return to the User Options page.");
         scanner.nextLine();
         userOptions(existingUser);
     }
@@ -228,12 +335,4 @@ public class Main {
     userListToJson();
     login();
   }
-
-  /*
-  TODO:
-    Figure out where to put invalid input message in userOptions().
-
-
-  */
-
 }
