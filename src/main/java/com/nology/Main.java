@@ -67,12 +67,62 @@ public class Main {
     writer.writeValue(new File("src/user_data.json"), userList);
   }
 
+  public static void adminOptions() throws IOException {
+    System.out.println("Hello Admin. Press 1 to view the Library Report or 2 to Logout.");
+    String adminInput = scanner.nextLine();
+    switch (adminInput) {
+      case "1":
+        for (Book book : bookList) {
+          System.out.println(
+              "Number: "
+                  + book.getNumber()
+                  + " - "
+                  + book.getTitle()
+                  + " by "
+                  + book.getAuthor()
+                  + ". Times loaned: "
+                  + book.getTimesLoaned()
+                  + ". Currently on loan: "
+                  + book.getOnLoan()
+                  + ".");
+        }
+        System.out.println(" ");
+        System.out.println("Press Enter to return to the Admin Options page.");
+        scanner.nextLine();
+        adminOptions();
+        break;
+      case "2":
+        System.out.println("Thank you for using the Library System.");
+        System.out.println("Press Enter to Logout.");
+        scanner.nextLine();
+        login();
+        break;
+      default:
+        System.out.println("Invalid input. Press Enter to return to the Admin Options page.");
+        scanner.nextLine();
+        adminOptions();
+    }
+  }
+
   public static void checkUser(String existingUser) throws IOException {
     for (User user : userList) {
       if (user.getName().equals(existingUser)) {
-        System.out.println("Welcome " + existingUser + ". Press Enter to continue.");
-        scanner.nextLine();
-        userOptions(existingUser);
+        if (existingUser.equals("Admin")) {
+          System.out.println("Please enter the password for Admin.");
+          System.out.println("Password:");
+          String adminPassword = scanner.nextLine();
+          if ("admin".equals(adminPassword)) {
+            adminOptions();
+          } else {
+            System.out.println("Incorrect password. Press Enter to return to the Login page.");
+            scanner.nextLine();
+            login();
+          }
+        } else {
+          System.out.println("Welcome " + existingUser + ". Press Enter to continue.");
+          scanner.nextLine();
+          userOptions(existingUser);
+        }
         return;
       }
     }
@@ -82,6 +132,7 @@ public class Main {
             + " not found. Please check you entered the "
             + "correct username or create a new account. ");
     System.out.println("Press Enter to continue.");
+    scanner.nextLine();
     login();
   }
 
@@ -93,6 +144,8 @@ public class Main {
                 + newUser
                 + " is already taken. Please choose "
                 + "a different username.");
+        System.out.println(" ");
+        System.out.println("Press Enter to return to the Login page.");
         return;
       }
     }
@@ -105,22 +158,22 @@ public class Main {
 
   public static void login() throws IOException {
     System.out.println(
-        "Welcome to the Library System. Press 1 to login using an existing "
-            + "account. Press 2 to create a new account."
+        "Welcome to the Library System. Press 1 to Login using an Existing "
+            + "Account. Press 2 to create a New Account."
             + " ");
     String loginOrSignup = scanner.nextLine();
 
     switch (loginOrSignup) {
       case "1":
-        System.out.println("Hello, existing user.");
-        System.out.println("Please enter your username below.");
+        System.out.println("Hello, Existing User.");
+        System.out.println("Please enter your Username below.");
         System.out.println("Username:");
         String existingUser = scanner.nextLine();
         checkUser(existingUser);
         break;
       case "2":
         System.out.println("Hello, new user.");
-        System.out.println("Please enter your desired username below.");
+        System.out.println("Please enter your desired Username below.");
         System.out.println("Username:");
         String newUser = scanner.nextLine();
         createUser(newUser);
@@ -212,10 +265,14 @@ public class Main {
             System.out.println("Press Enter to return to the User Options page.");
             scanner.nextLine();
             userOptions(existingUser);
+            return;
           }
         }
       }
     }
+    System.out.println("Invalid input. Press Enter to return to the User Options page.");
+    scanner.nextLine();
+    userOptions(existingUser);
   }
 
   public static void userOptions(String existingUser) throws IOException {
@@ -259,7 +316,7 @@ public class Main {
         break;
       case "3":
         System.out.println("Thank you for using the Library System.");
-        System.out.println("Press Enter to continue.");
+        System.out.println("Press Enter to Logout.");
         scanner.nextLine();
         login();
         break;
@@ -278,11 +335,4 @@ public class Main {
     userListToJson();
     login();
   }
-
-  /*
-  TODO:
-    Admin password.
-    Admin report method.
-  */
-
 }

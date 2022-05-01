@@ -54,6 +54,10 @@ public class Book {
     return onLoan;
   }
 
+  public int getTimesLoaned() {
+    return timesLoaned;
+  }
+
   public void setOnLoan() {
     this.onLoan = !onLoan;
   }

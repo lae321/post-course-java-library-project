@@ -1059,7 +1059,7 @@
   "genre" : "nonfiction",
   "subGenre" : "autobiography",
   "publisher" : "Dell",
-  "timesLoaned" : 13
+  "timesLoaned" : 16
 }, {
   "onLoan" : false,
   "number" : "119",
@@ -1068,7 +1068,7 @@
   "genre" : "nonfiction",
   "subGenre" : "autobiography",
   "publisher" : "Penguin",
-  "timesLoaned" : 0
+  "timesLoaned" : 1
 }, {
   "onLoan" : false,
   "number" : "120",
